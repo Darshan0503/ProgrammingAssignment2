@@ -1,10 +1,9 @@
 ## This program contains a pair of functions that cache the inverse of a matrix.
 
-## This function creates a special "matrix" object that can cache its inverse.
-
 makeCacheMatrix <- function(mat = matrix()) {
+ ## This function creates a special "matrix" object that can cache its inverse. 
   inv <- NULL
-  
+ 
   set <- function(y) {
     mat <<- y
     inv <<- NULL
